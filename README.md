@@ -37,23 +37,28 @@ To run, place the BashRegion.py in a directory that also includes the input file
 
 INPUT/PARAMETERS TO SET:
 -------------------------
-1) intervalFile_INPUT 
+1) intervalFile_INPUT
+
 A tab-delimited file (such as the included "SampleInput.interval" file) with a list of 
 coordinates. See comment in the PARAMETERS section for an example of the format.
 
 2) referenceGenomeForDAS
+
 The reference genome to use for translating the genomic coordinates in intervalFile_INPUT 
 to genomic DNA sequence. For the included file ("SampleInput.interval"), make sure to 
 set referenceGenomeForDAS = "hg19" since the coordinates are from the hg19 human
 reference genome.
 
 3) outDirectory
+
 The name of the directory for output files. It will be created if not already present.
 
 4) outShortName
+
 A short string to prefix the output files with.
 
 5) cutoffSpacing
+
 The minimum spacing between selected sgRNAs on the same strand. For example, if 
 cutoffSpacing = 2, then the next sgRNA must be > 2 bp from the previous sgRNA chosen. To
 find all sgRNAs in a region, set cutoffSpacing = 0.
