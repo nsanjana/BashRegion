@@ -1,6 +1,7 @@
 # BashRegion
 This function takes as input an Interval-format file and output all sgRNA
-sites in the interval in both CSV and FASTA format
+sites in the interval in both CSV and FASTA format.
+
 Author: Neville Sanjana (nsanjana@nygenome.org)
 
 CHANGELOG:
@@ -68,17 +69,17 @@ OUTPUT FILES:
 -------------------------
 Output is all sgRNAs on both strands in CSV and FASTA format. 
 
-The CSV format includes the sgRNA sequences and the following parameters:
-	Spacer number
-	Strand
-	Start Pos
-	End Pos
-	Chromosome
-	ChrStart
-	ChrEnd
-	Cut Site
-	Distance from Previous Spacer
-	Spacer (i.e. sgRNA)
-	PAM
-	Spacer GC
-	Seq ID
+The CSV format output includes the sgRNA sequences and the following parameters:
+* Spacer number
+* Strand
+* Start Pos
+* End Pos
+* Chromosome
+* ChrStart
+* ChrEnd
+* Cut Site
+* Distance from Previous Spacer
+* Spacer (i.e. sgRNA)
+* PAM
+* Spacer GC
+* Seq ID
