@@ -20,10 +20,10 @@ CHANGELOG:
 USAGE REQUIREMENTS
 ---------------------
 Python 2.7 with the following libraries installed:
-	Default Python libraries (sys, os, csv, urllib2, math, ElementTree)
-	BioConductor (for SeqIO, SeqUtils, Seq, IUPAC)
-	numpy
-	pandas
+* Default Python libraries (sys, os, csv, urllib2, math, ElementTree)
+* BioConductor (for SeqIO, SeqUtils, Seq, IUPAC)
+* numpy
+* pandas
 
 Please make sure all of these libraries are installed and working before proceeding.
 
