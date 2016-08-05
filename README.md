@@ -56,6 +56,18 @@ find all sgRNAs in a region, set cutoffSpacing = 0.
 6) **PAM** : A string that contains the PAM sequence (e.g. "NGG" for SpCas9)
 
 
+FORMAT OF **intervalFile_INPUT**:
+-------------------------
+The interval file should have 5 columns and be tab-delimited
+
+``<chromosome> <strand (optional but needs column to be there)> <base start> <base end> <geneID>``
+
+Example of **intervalFile_INPUT**:
+>``chr12	.	51057788	51173928	ATF1``
+
+>``chr1		+	8821058		8921418		ENO1``
+
+Note that the strand parameter is not used by BashRegion.py but placed here for compatibility with standard interval file formats.
 
 
 
@@ -78,16 +90,4 @@ The CSV format output includes the sgRNA sequences and the following parameters:
 * Spacer GC
 * Seq ID
 
-FORMAT OF **intervalFile_INPUT**:
--------------------------
-The interval file should have 5 columns and be tab-delimited
-
-``<chromosome> <strand (optional but needs column to be there)> <base start> <base end> <geneID>``
-
-Example of **intervalFile_INPUT**:
->``chr12	.	51057788	51173928	ATF1``
-
->``chr1		+	8821058		8921418		ENO1``
-
-Note that the strand parameter is not used by BashRegion.py but placed here for compatibility with standard interval file formats.
 
